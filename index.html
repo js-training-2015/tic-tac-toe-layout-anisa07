@@ -1,28 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
-
     <!-- Bootstrap -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
 
+<body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-inverse {
+            background-color: #e30085;
+            border-color: #a30060;
+        }
+        
+        .navbar-header .navbar-brand,
+        .navbar-header .navbar-brand:focus {
+            color: #fffffa
+        }
+        
+        .navbar-header .navbar-brand:hover {
+            color: #fffaca
+        }
+        
+        s .col-xs-1 {
+            min-width: 100px;
+        }
+        
+        #scoreTitle {
+            background-color: #e30085;
+        }
+        
+        .panel-title {
+            color: white;
+        }
+        
+        .gameField {
+            width: 330px;
+            height: 330px;
+            margin: 15px;
+        }
+        
+        .gameCell {
+            border-radius: 10px;
+            background-color: #8AC007;
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 5px;
+        }
+        
+        .gameCell:active {
+            background-color: #e30085;
+        }
+        
+        #score {
+            max-width: 100px;
+            margin: 15px;
+        }
+    </style>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">New game</a>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-2 col-md-offset-4">
+            <div class="gameField">
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+                <div class="gameCell"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-2 col-md-offset-5">
+            <div class="panel panel-default" id="score">
+                <div class="panel-heading" id="scoreTitle">
+                    <h3 class="panel-title">
+         Score 
+      </h3>
+                </div>
+                <div class="panel-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
